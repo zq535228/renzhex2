@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ValidatePassword.asmx.cs" Class="X_WebService.ValidatePassword" %>

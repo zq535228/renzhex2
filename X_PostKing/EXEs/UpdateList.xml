@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="gb2312"?>
+<AutoUpdater>
+  <description>
+    忍者站群更新记录
+	2012年3月3日，修复链轮提取的小问题，增加相关域爬爬功能。
+	2012年3月2日，优化抓取成功的链轮URL，增加导入文章，修复若干bugs。
+	2012年2月25日，加入云链轮库，忍者用户均可加入。
+	2012年2月13日，更新的地方你都能发现，增加了淘宝客店铺引入（商）。
+	2012年2月12日，修复链轮提示，增加了些菜单。忍者链轮服务器将于下周开通。
+	2012年2月4日，修复连续顶贴失败的BUG。
+	2012年2月1日，解决发布标题的空白问题，WP生成器版权修正，优化某些细节。
+	2012年1月29日，备案域名过滤、报表优化、发布优化、还有一些细节问题。
+	2012年1月21日，网站报表中，增加了域名剩余天数，提醒站主域名续费。
+	2012年1月18日，加入WP一键生成器，商业用户独享。
+	2012年1月16日，修复多线并发，发布失败的bug。
+	2012年1月15日，加入过去域名工具。更新了一些细节问题。
+	2012年1月11日，加入了批量站点，批量任务，更新了N多个问题。
+  </description>
+  <Updater>
+    <Url>http://renzhe.org/pub_x2/</Url>
+    <LastUpdateTime>2012年3月5日14:08:03</LastUpdateTime>
+  </Updater>
+  <Application applicationId="X_PostKing">
+    <EntryPoint>X_PostKing</EntryPoint>
+    <Location>.</Location>
+    <Version>2.1.0000</Version>
+  </Application>
+  <Files>
+    <File Ver="1.0.1.8" Name="X_PostKing.exe" />
+    <File Ver="1.0.1.8" Name="X_Service.dll" />
+    <File Ver="1.0.1.8" Name="X_Model.dll" />
+    <File Ver="1.0.0.2" Name="X_Wordpress.dll" />
+    <File Ver="1.0.0.0" Name="X_TkShop.dll" />
+  </Files>
+</AutoUpdater>

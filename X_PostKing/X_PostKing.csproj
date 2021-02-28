@@ -1,0 +1,702 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{934AECEB-48A0-4E04-A951-CD31C0E1174D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>X_PostKing</RootNamespace>
+    <AssemblyName>X_PostKing</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>EXEs\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>EXEs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>3232.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == '生成|x86'">
+    <OutputPath>bin\x86\生成\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>EXEs\X_PostKing.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;D:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>X_PostKing.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.3.2.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>EXEs\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenWebKitSharp, Version=2.8.0.1509, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\QQPCmgr\Desktop\open-webkit-sharp\Binary NET2\OpenWebKitSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Winista.HtmlParser, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Winista.HtmlParser.dll</HintPath>
+    </Reference>
+    <Reference Include="X_Docking, Version=2.5.0.3441, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\X_Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Job\JobWebBrowser.cs" />
+    <Compile Include="X_Form_AddSitePostEdit00.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit00.Designer.cs">
+      <DependentUpon>X_Form_AddSitePostEdit00.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_ModuleShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_ModuleShop.Designer.cs">
+      <DependentUpon>X_Form_ModuleShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_TextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_TextBox.Designer.cs">
+      <DependentUpon>X_Form_TextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_WebBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_WebBrowser.Designer.cs">
+      <DependentUpon>X_Form_WebBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Invite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Invite.Designer.cs">
+      <DependentUpon>X_Form_Invite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job\Ibms.Utility.Task.cs" />
+    <Compile Include="Job\JobLianlun.cs" />
+    <Compile Include="Job\TaskCenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ModelWordPress.cs" />
+    <Compile Include="Tools\X_Form_Advanced_Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_Advanced_Settings.Designer.cs">
+      <DependentUpon>X_Form_Advanced_Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_DnsPod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_DnsPod.Designer.cs">
+      <DependentUpon>X_Form_DnsPod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_TkShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_TkShop.Designer.cs">
+      <DependentUpon>X_Form_TkShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_WLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_WLink.Designer.cs">
+      <DependentUpon>X_Form_WLink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_WordPressBuild.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_WordPressBuild.designer.cs">
+      <DependentUpon>X_Form_WordPressBuild.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_ZijideLu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_ZijideLu.Designer.cs">
+      <DependentUpon>X_Form_ZijideLu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddPick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddPick.Designer.cs">
+      <DependentUpon>X_Form_AddPick.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AllPutView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AllPutView.Designer.cs">
+      <DependentUpon>X_Form_AllPutView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_BatchAddSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_BatchAddSite.Designer.cs">
+      <DependentUpon>X_Form_BatchAddSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_BatchAddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_BatchAddTask.Designer.cs">
+      <DependentUpon>X_Form_BatchAddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_FlashHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_FlashHelp.Designer.cs">
+      <DependentUpon>X_Form_FlashHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_MainFormBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_MainFormBrowser.Designer.cs">
+      <DependentUpon>X_Form_MainFormBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_News.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_News.Designer.cs">
+      <DependentUpon>X_Form_News.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_SiteManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_SiteManage.Designer.cs">
+      <DependentUpon>X_Form_SiteManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job\JobCoreBase.cs" />
+    <Compile Include="Job\JobCoreTest.cs" />
+    <Compile Include="Job\JobCoreRun.cs" />
+    <Compile Include="Pick\PickBase.cs" />
+    <Compile Include="Pick\PickInstance.cs" />
+    <Compile Include="Pick\PickManage.cs" />
+    <Compile Include="Tools\X_Form_Domain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_Domain.Designer.cs">
+      <DependentUpon>X_Form_Domain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_SiteInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_SiteInfo.Designer.cs">
+      <DependentUpon>X_Form_SiteInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\X_Form_GJC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\X_Form_GJC.Designer.cs">
+      <DependentUpon>X_Form_GJC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit04Visit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit04Visit.Designer.cs">
+      <DependentUpon>X_Form_AddSitePostEdit04Visit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Base.Designer.cs">
+      <DependentUpon>X_Form_Base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_LinkCycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_LinkCycle.Designer.cs">
+      <DependentUpon>X_Form_LinkCycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AboutBox.Designer.cs">
+      <DependentUpon>X_Form_AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_CronExp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_CronExp.Designer.cs">
+      <DependentUpon>X_Form_CronExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Extend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Extend.Designer.cs">
+      <DependentUpon>X_Form_Extend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_TaskManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_TaskManage.Designer.cs">
+      <DependentUpon>X_Form_TaskManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_VCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_VCode.Designer.cs">
+      <DependentUpon>X_Form_VCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddGroup.Designer.cs">
+      <DependentUpon>X_Form_AddGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSite.Designer.cs">
+      <DependentUpon>X_Form_AddSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit02Cate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit02Cate.Designer.cs">
+      <DependentUpon>X_Form_AddSitePostEdit02Cate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit03Put.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit03Put.Designer.cs">
+      <DependentUpon>X_Form_AddSitePostEdit03Put.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSiteUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSiteUser.Designer.cs">
+      <DependentUpon>X_Form_AddSiteUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddTask.Designer.cs">
+      <DependentUpon>X_Form_AddTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_InputBox.Designer.cs">
+      <DependentUpon>X_Form_InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Cate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Cate.Designer.cs">
+      <DependentUpon>X_Form_Cate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Main.Designer.cs">
+      <DependentUpon>X_Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="X_Form_BaseTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_BaseTool.Designer.cs">
+      <DependentUpon>X_Form_BaseTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_HttpWatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_HttpWatch.Designer.cs">
+      <DependentUpon>X_Form_HttpWatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit.Designer.cs">
+      <DependentUpon>X_Form_AddSitePostEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Setup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Setup.Designer.cs">
+      <DependentUpon>X_Form_Setup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_Users.Designer.cs">
+      <DependentUpon>X_Form_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit01Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="X_Form_AddSitePostEdit01Login.Designer.cs">
+      <DependentUpon>X_Form_AddSitePostEdit01Login.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SoftUpdate\X_Update.csproj">
+      <Project>{90962DE1-2D91-4DB8-B1EF-86CC96EE2CEB}</Project>
+      <Name>X_Update</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\X_Model\X_Model.csproj">
+      <Project>{DF1CAED5-24BF-48BF-9FA3-51263AB0B1E7}</Project>
+      <Name>X_Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\X_Service\X_Service.csproj">
+      <Project>{79EDF15C-D63C-4BC0-826E-D09074B43945}</Project>
+      <Name>X_Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="X_Form_AddSitePostEdit00.resx">
+      <DependentUpon>X_Form_AddSitePostEdit00.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_ModuleShop.resx">
+      <DependentUpon>X_Form_ModuleShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_TextBox.resx">
+      <DependentUpon>X_Form_TextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_WebBrowser.resx">
+      <DependentUpon>X_Form_WebBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Invite.resx">
+      <DependentUpon>X_Form_Invite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_Advanced_Settings.resx">
+      <DependentUpon>X_Form_Advanced_Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_DnsPod.resx">
+      <DependentUpon>X_Form_DnsPod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_TkShop.resx">
+      <DependentUpon>X_Form_TkShop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_WLink.resx">
+      <DependentUpon>X_Form_WLink.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_WordPressBuild.resx">
+      <DependentUpon>X_Form_WordPressBuild.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_ZijideLu.resx">
+      <DependentUpon>X_Form_ZijideLu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddPick.resx">
+      <DependentUpon>X_Form_AddPick.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AllPutView.resx">
+      <DependentUpon>X_Form_AllPutView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_BatchAddSite.resx">
+      <DependentUpon>X_Form_BatchAddSite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_BatchAddTask.resx">
+      <DependentUpon>X_Form_BatchAddTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_FlashHelp.resx">
+      <DependentUpon>X_Form_FlashHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_MainFormBrowser.resx">
+      <DependentUpon>X_Form_MainFormBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_News.resx">
+      <DependentUpon>X_Form_News.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_SiteManage.resx">
+      <DependentUpon>X_Form_SiteManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_Domain.resx">
+      <DependentUpon>X_Form_Domain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_SiteInfo.resx">
+      <DependentUpon>X_Form_SiteInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\X_Form_GJC.resx">
+      <DependentUpon>X_Form_GJC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSitePostEdit04Visit.resx">
+      <DependentUpon>X_Form_AddSitePostEdit04Visit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Base.resx">
+      <DependentUpon>X_Form_Base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_LinkCycle.resx">
+      <DependentUpon>X_Form_LinkCycle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AboutBox.resx">
+      <DependentUpon>X_Form_AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_CronExp.resx">
+      <DependentUpon>X_Form_CronExp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Extend.resx">
+      <DependentUpon>X_Form_Extend.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_TaskManage.resx">
+      <DependentUpon>X_Form_TaskManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_VCode.resx">
+      <DependentUpon>X_Form_VCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddGroup.resx">
+      <DependentUpon>X_Form_AddGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSite.resx">
+      <DependentUpon>X_Form_AddSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSitePostEdit02Cate.resx">
+      <DependentUpon>X_Form_AddSitePostEdit02Cate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSitePostEdit03Put.resx">
+      <DependentUpon>X_Form_AddSitePostEdit03Put.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSiteUser.resx">
+      <DependentUpon>X_Form_AddSiteUser.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddTask.resx">
+      <DependentUpon>X_Form_AddTask.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_InputBox.resx">
+      <DependentUpon>X_Form_InputBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Cate.resx">
+      <DependentUpon>X_Form_Cate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Main.resx">
+      <DependentUpon>X_Form_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_BaseTool.resx">
+      <DependentUpon>X_Form_BaseTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_HttpWatch.resx">
+      <DependentUpon>X_Form_HttpWatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSitePostEdit.resx">
+      <DependentUpon>X_Form_AddSitePostEdit.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Setup.resx">
+      <DependentUpon>X_Form_Setup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_Users.resx">
+      <DependentUpon>X_Form_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="X_Form_AddSitePostEdit01Login.resx">
+      <DependentUpon>X_Form_AddSitePostEdit01Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\AxInterop.SHDocVw.dll" />
+    <None Include="EXEs\Config\MainConfig.VDB" />
+    <None Include="Resources\webshop.png" />
+    <Content Include="授权文件.txt" />
+    <None Include="app.config" />
+    <None Include="BUGS.doc" />
+    <None Include="EXEs\Config\Setup.ini" />
+    <None Include="EXEs\Module\0o0o请选择发布模块0o0o.rzmb" />
+    <Content Include="3232.ico" />
+    <Content Include="EXEs\UpdateList.xml" />
+    <Content Include="Lib\Common.Logging.dll" />
+    <Content Include="Lib\ComponentFactory.Krypton.Toolkit.dll" />
+    <Content Include="Lib\delete.ico" />
+    <Content Include="Lib\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Lib\Interop.HttpWatch.dll" />
+    <Content Include="Lib\Interop.SHDocVw.dll" />
+    <None Include="EXEs\Module\QQ空间博文___泛抓取___质量一般.rzget" />
+    <None Include="EXEs\Module\SOSO博文关键词___泛抓取___质量一般.rzget" />
+    <None Include="EXEs\Module\SOSO新闻关键词___泛抓取___质量较好.rzget" />
+    <None Include="EXEs\Module\百度知道关键词___泛抓取___质量较好.rzget" />
+    <None Include="EXEs\反编译升级.fsf" />
+    <None Include="Lib\忍者软件安装包.nsi" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\X_Form_Domain.png" />
+    <None Include="Resources\X_Form_Group.png" />
+    <None Include="Resources\X_Form_Help.png" />
+    <None Include="Resources\X_Form_LinkCycle.png" />
+    <None Include="Resources\X_Form_Login.png" />
+    <None Include="Resources\X_Form_Setup.png" />
+    <None Include="Resources\X_Form_Site.png" />
+    <None Include="Resources\X_Form_Task.png" />
+    <None Include="Resources\X_Form_WordStock.png" />
+    <None Include="Resources\tools.png" />
+    <None Include="Resources\extend.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\run.png" />
+    <None Include="Resources\addposter.png" />
+    <None Include="Resources\addgroup.png" />
+    <None Include="Resources\eidt.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\editgroup.png" />
+    <None Include="Resources\pm.png" />
+    <None Include="Resources\visit.png" />
+    <None Include="Resources\plugin_link.png" />
+    <None Include="Resources\buy.png" />
+    <None Include="Resources\delgroup.png" />
+    <None Include="Resources\sitesinfo.png" />
+    <None Include="Resources\start.png" />
+    <None Include="Resources\out.png" />
+    <None Include="Resources\in.png" />
+    <None Include="Resources\Chinaz.ico" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\process-stop1.png" />
+    <None Include="Resources\cannel.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\pictureBox1.Image.png" />
+    <None Include="Resources\about.png" />
+    <Content Include="Lib\Winista.HtmlParser.dll" />
+    <Content Include="Lib\X_Docking.dll" />
+    <Content Include="Lib\X_Quartz.dll" />
+    <None Include="Resources\layout_add.ico" />
+    <None Include="Resources\chart_organisation_add.ico" />
+    <None Include="Resources\chinaz.png" />
+    <None Include="Resources\document_save_as.png" />
+    <None Include="Resources\widget_doc.png" />
+    <None Include="Resources\X_Form_zijidelu.png" />
+    <None Include="Resources\100.jpg" />
+    <None Include="Resources\vip.jpg" />
+    <None Include="Resources\100.png" />
+    <None Include="Resources\old_go_previous.png" />
+    <Content Include="升级日志.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EXEs\Log\" />
+    <Folder Include="EXEs\Task\" />
+    <Folder Include="EXEs\Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
